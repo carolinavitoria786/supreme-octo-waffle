@@ -13,13 +13,13 @@ public class Contas {
         int maiorValor;
         if (x > y && x > z) {
             maiorValor = x;
-            System.out.printf("x(%d) é maior que y(%d) e z(%d)", x, y, z);
+            System.out.printf("x(%d) é maior que y(%d) e z(%d)%n", x, y, z);
         } else if (y > x && y > z) {
             maiorValor = y;
-            System.out.printf("y(%d) é maior que x(%d) e z(%d)", y, x, z);
+            System.out.printf("y(%d) é maior que x(%d) e z(%d)%n", y, x, z);
         } else {
             maiorValor = z;
-            System.out.printf("z(%d) é maior que x(%d) e y(%d)", z, x, y);
+            System.out.printf("z(%d) é maior que x(%d) e y(%d)%n", z, x, y);
         }
 
         return maiorValor;
@@ -32,13 +32,13 @@ public class Contas {
         int menorValor;
         if (x < y && x < z) {
             menorValor = x;
-            System.out.printf("x(%d) é menor que y(%d) e z(%d)", x, y, z);
+            System.out.printf("x(%d) é menor que y(%d) e z(%d)%n", x, y, z);
         } else if (y < x && y < z) {
             menorValor = y;
-            System.out.printf("y(%d) é menor que x(%d) e z(%d)", y, x, z);
+            System.out.printf("y(%d) é menor que x(%d) e z(%d)%n", y, x, z);
         } else {
             menorValor = z;
-            System.out.printf("z(%d) é menor que x(%d) e y(%d)", z, x, y);
+            System.out.printf("z(%d) é menor que x(%d) e y(%d)%n", z, x, y);
         }
 
         return menorValor;
@@ -51,10 +51,10 @@ public class Contas {
         int inter;
         if (x > y && x < z) {
             inter = x;
-            System.out.printf("x(%d) esta dentro do intervalo de y(%d) e z(%d)", x, y, z);
+            System.out.printf("x(%d) esta dentro do intervalo de y(%d) e z(%d)%n", x, y, z);
         } else if (x < y && x < z) {
             inter = y;
-            System.out.printf("x(%d) esta fora do intervalo de y(%d) e z(%d)", x, y, z);
+            System.out.printf("x(%d) esta fora do intervalo de y(%d) e z(%d)%n", x, y, z);
         } else {
             inter = z;
             System.out.println("OMEGALUL");
@@ -67,12 +67,16 @@ public class Contas {
         this.x = x;
         this.y = y;
         this.z = z;
+        int seta;
         if (x % y == 0 && x % z == 0) {
-            System.out.printf("x(%d) é divisivel por y(%d) e por z(%d)", x, y, z);
-            return 1;
+            seta = x;
+            System.out.printf("x(%d) é divisivel por y(%d) e por z(%d)%n", x, y, z);
+            
         } else {
-            System.out.printf("x(%d) não é divisivel por y(%d) nem por z(%d)", x, y, z);
-            return 0;
+            seta = y;
+            System.out.printf("x(%d) não é divisivel por y(%d) nem por z(%d)%n", x, y, z);
+            
         }
+        return seta;
     }
 }

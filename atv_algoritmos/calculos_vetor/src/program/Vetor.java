@@ -11,18 +11,25 @@ public class Vetor {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int n = 3;
         Contas conta = new Contas();
-        Contas[] vect = new Contas[n];
 
-        for (int i = 0; i <= n; i++) {
-            int x = sc.nextInt();
-            int y = sc.nextInt();
-            int z = sc.nextInt();
-            vect[i].maiorDTres(x, y, z);
-        }
+        System.out.println("Digite um valor para x: ");
+        int x = sc.nextInt();
+
+        System.out.println("Digite um valor para y: ");
+        int y = sc.nextInt();
+
+        System.out.println("Digite um valor para z: ");
+        int z = sc.nextInt();
+
+        System.out.println("Sobre os valores digitados temos que: ");
+        conta.maiorDTres(x, y, z);
+        conta.menorDTres(x, y, z);
+        conta.dentroInter(x, y, z);
+        conta.div(x, y, z);
 
 
+        sc.close();
     }
-    
+
 }
